@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo '🔧 Installing packages via Homebrew...'
+
+# Install Homebrew if not installed
+if ! command -v brew >/dev/null 2>&1; then
+  echo 'Installing Homebrew...'
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+brew install \
+  zsh \
+  zoxide \
+  exa \
+  bat \
+  fzf \
+  ripgrep \
+  tmux \
+  git \
+  starship
+
+echo '✅ All packages installed.'

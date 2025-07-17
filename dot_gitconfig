@@ -1,0 +1,9 @@
+[user]
+  name = inyoung
+  email = in0@me.com
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  ci = commit
+  lg = log --oneline --graph --decorate

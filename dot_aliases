@@ -1,0 +1,3 @@
+alias ll='exa -lh --git'
+alias gs='git status'
+alias cd='z'

@@ -1,0 +1,1 @@
+# Sample Powerlevel10k config file. Run `p10k configure` to regenerate.
