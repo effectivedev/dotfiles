@@ -1,5 +1,7 @@
 # eza 기반 ls 대체
-alias ls='eza'
+#!/bin/zsh
+echo "🔁 .aliases 변경 감지 → source 적용 중..."
+source ~/.aliasesalias ls='eza'
 alias ll='eza -l'                        # long format
 alias la='eza -la'                       # long format + hidden files
 alias l='eza -laF'                       # + file type indicator
@@ -7,6 +9,7 @@ alias lt='eza --tree --level=2'         # tree view (2-level depth)
 alias l1='eza -1'                        # one entry per line
 alias lg='eza --git -la'                # git-aware long list
 alias ld='eza -laD'                      # directories only
+
 
 # 권한, inode 등 상세 보기
 alias lperm='eza -la --octal-permissions --inode'
@@ -22,7 +25,7 @@ alias cd='z'
 
 
 ##############################################
-Git
+#Git
 ##############################################
 # 상태, 커밋, 푸시
 alias gs='git status'
@@ -52,7 +55,7 @@ alias greset='git reset --hard'
 alias gclean='git clean -fd'
 
 ##############################################
-Chezmoi
+#Chezmoi
 ##############################################
 # 기본
 alias cz='chezmoi'                                 # 짧게
@@ -74,3 +77,5 @@ alias czr='chezmoi re-add'                         # 모두 재추적
 alias czl='chezmoi managed'                        # 관리 중인 전체 파일 리스트
 alias czp='chezmoi apply --dry-run'                # 실제 반영 없이 시뮬레이션
 
+#test
+alias in0='ll'
