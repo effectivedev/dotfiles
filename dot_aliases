@@ -77,6 +77,3 @@ alias czr='chezmoi re-add'                         # 모두 재추적
 alias czl='chezmoi managed'                        # 관리 중인 전체 파일 리스트
 alias czp='chezmoi apply --dry-run'                # 실제 반영 없이 시뮬레이션
 
-#test
-alias in='ll'
-alias in2='ll'
