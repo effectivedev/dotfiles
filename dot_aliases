@@ -1,3 +1,21 @@
-alias ll='eza'
+# eza 기반 ls 대체
+alias ls='eza'
+alias ll='eza -l'                        # long format
+alias la='eza -la'                       # long format + hidden files
+alias l='eza -laF'                       # + file type indicator
+alias lt='eza --tree --level=2'         # tree view (2-level depth)
+alias l1='eza -1'                        # one entry per line
+alias lg='eza --git -la'                # git-aware long list
+alias ld='eza -laD'                      # directories only
+
+# 권한, inode 등 상세 보기
+alias lperm='eza -la --octal-permissions --inode'
+
+# 파일 정렬
+alias lsize='eza -lS'                    # sort by size
+alias ltime='eza -lt'                    # sort by modified time
+alias lctime='eza -lc'                   # sort by created time:Q
+
+alias latime='eza -lu'                   # sort by accessed time
 alias gs='git status'
 alias cd='z'
