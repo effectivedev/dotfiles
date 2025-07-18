@@ -1,1 +1,24 @@
-set linenumbers
+## 기본 표시 설정
+set linenumbers         # 줄 번호 표시
+set constantshow        # 커서 위치 상시 표시
+set indicator           # 오른쪽 스크롤바 표시
+set softwrap            # 단어 기준 줄바꿈
+set mouse               # 마우스 클릭 이동 허용
+
+## 편집기 동작
+set tabsize 4           # 탭 크기 4칸
+set autoindent          # 자동 들여쓰기
+set nowrap              # 줄 넘김 없이 스크롤
+set smarthome           # Home 키로 처음으로
+
+## 검색/바꾸기
+set caseSensitive       # 검색 시 대소문자 구분
+
+## 파일 처리
+set backup              # 백업파일 생성 (파일명~)
+set tempfile            # 저장 전 임시파일 사용
+set nohelp              # 하단 도움말 제거 (더 넓게 보기 원할 때)
+
+## 색상 테마
+include "/usr/local/share/nano/*.nanorc"
+include "/opt/homebrew/share/nano/*.nanorc"
