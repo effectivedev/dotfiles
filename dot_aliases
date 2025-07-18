@@ -78,4 +78,5 @@ alias czl='chezmoi managed'                        # 관리 중인 전체 파일
 alias czp='chezmoi apply --dry-run'                # 실제 반영 없이 시뮬레이션
 
 #test
-alias in0='ll'
+alias in='ll'
+alias in2='ll'
