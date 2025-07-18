@@ -20,6 +20,10 @@ alias latime='eza -lu'                   # sort by accessed time
 alias gs='git status'
 alias cd='z'
 
+
+##############################################
+Git
+##############################################
 # 상태, 커밋, 푸시
 alias gs='git status'
 alias ga='git add .'
@@ -46,3 +50,27 @@ alias glg='git log --oneline --graph --decorate'
 # 리셋
 alias greset='git reset --hard'
 alias gclean='git clean -fd'
+
+##############################################
+Chezmoi
+##############################################
+# 기본
+alias cz='chezmoi'                                 # 짧게
+alias cza='chezmoi apply'                          # 변경 적용
+alias czd='chezmoi diff'                           # 변경사항 미리보기
+alias czs='chezmoi status'                         # 추적 상태 확인
+alias cze='chezmoi edit'                           # 파일 편집
+alias czcd='chezmoi cd'                            # 템플릿 디렉토리로 이동
+
+# 추가/삭제
+alias czi='chezmoi add'                            # 파일 추가
+alias czf='chezmoi forget'                         # 추적 제거
+
+# 설정
+alias czinit='chezmoi init --apply <your-repo>'    # 첫 셋업 시 사용
+alias czr='chezmoi re-add'                         # 모두 재추적
+
+# 디버깅/백업
+alias czl='chezmoi managed'                        # 관리 중인 전체 파일 리스트
+alias czp='chezmoi apply --dry-run'                # 실제 반영 없이 시뮬레이션
+
