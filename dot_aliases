@@ -1,7 +1,6 @@
 # eza 기반 ls 대체
 #!/bin/zsh
-echo "🔁 .aliases 변경 감지 → source 적용 중..."
-source ~/.aliasesalias ls='eza'
+alias ls='eza'
 alias ll='eza -l'                        # long format
 alias la='eza -la'                       # long format + hidden files
 alias l='eza -laF'                       # + file type indicator
