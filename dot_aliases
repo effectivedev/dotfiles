@@ -19,3 +19,30 @@ alias lctime='eza -lc'                   # sort by created time:Q
 alias latime='eza -lu'                   # sort by accessed time
 alias gs='git status'
 alias cd='z'
+
+# 상태, 커밋, 푸시
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gca='git commit -a -m'
+alias gp='git push'
+
+# 커밋 + 푸시 한 번에
+alias gcpp='f(){ git commit -am "$1" && git push; }; f'
+
+# 브랜치
+alias gb='git branch'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gcm='git checkout main'
+
+# 변경사항 확인
+alias gd='git diff'
+alias gds='git diff --staged'
+
+# 로그
+alias glg='git log --oneline --graph --decorate'
+
+# 리셋
+alias greset='git reset --hard'
+alias gclean='git clean -fd'
