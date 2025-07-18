@@ -1,0 +1,3 @@
+#!/bin/zsh
+echo "🔁 .zshrc 변경됨 → reloading..."
+source ~/.zshrc
